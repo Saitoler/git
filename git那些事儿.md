@@ -10,4 +10,15 @@
 - 删除分支： `git branch -d <branch_name>`  
 - 强制删除一个还未合并的分支： `git branch -D <branch_name>`  
 
+## 多人协同
 
+- `git remote (-v)  # 查看远程仓库信息`
+
+### 推送分支  
+即将该分支上的所有本地文件都推送到远程仓库。推送时，要指定本地分支，Git 就会把该分支推送到对应的  
+远程分支上。  
+
+`git push origin master # 将本地 Master 分支的文件推送到远程仓库 origin 的 master 分支`  
+`git push origin <branch_name> # 将本地分支 branch_name 的文件推送到远程仓库 origin 对应 的 branch_name 分支`
+
+### 抓取分支  
